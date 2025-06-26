@@ -1,14 +1,16 @@
 # Intraday Electricity Price Analysis – GB Market
 
 ## Overview
-- Analyzes intraday electricity prices in Great Britain using historical data, renewable generation patterns, and advanced modeling.
+- Analyzes intraday electricity prices in Great Britain using historical data and technical indicators.
 - Aims to identify market regimes and build an automated trading strategy.
 
-## Key Insights
-- Price Trends: Two daily peaks (8–9 AM, 4–6 PM); Sundays are cheapest.
-- Wind Generation: High wind lowers prices (negative correlation).
-- Price Volatility: Spikes linked to demand-supply imbalances.
-- Market Regimes: Hidden Markov Model (HMM) effectively classifies volatility regimes.
+## Model Used: LSTM
+
+-LSTM is used to forecast next-hour electricity prices based solely on historical price data.
+-It captures time-based trends and volatility through its memory-based architecture.
+-The model learns patterns from past price sequences to predict future movements.
+-LSTM predictions are combined with technical indicators (like RSI, MACD, and SMA) to generate trading signals.
+
 
 ## Trading Strategy
 - Initial Capital: £10,000
@@ -23,8 +25,7 @@
   - Stop-loss = 1.5 × ATR
   - Take-profit = 2 × ATR
 
-## Model Used: LSTM
-- Predicts intraday prices using historical data along with wind and solar generation inputs.
+
 
 ## Results
 - Return: 98.5%

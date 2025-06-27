@@ -6,9 +6,9 @@
 
 ## Model Used: LSTM
 
--LSTM is used to forecast next-hour electricity prices based solely on historical price data.
--It captures time-based trends and volatility through its memory-based architecture.
--The model learns patterns from past price sequences to predict future movements.
+-LSTM is used to forecast next-hour electricity prices based solely on historical price data. <br>
+-It captures time-based trends and volatility through its memory-based architecture. <br>
+-The model learns patterns from past price sequences to predict future movements. <br>
 -LSTM predictions are combined with technical indicators (like RSI, MACD, and SMA) to generate trading signals.
 
 
